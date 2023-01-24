@@ -4,162 +4,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>site logo</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Підключення шрифтів _Gilroy не підключений -->
+    <title>Gift finder</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html">logo</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html"></a>Home</li>
-          <li><a href="#"></a>About Us</li>
-          <li><a href="#"></a>Services</li>
-          <li><a href="#"></a>Blogs</li>
-        </ul>
-      </nav>
-      <button class="button">Gift Finder</button>
+    <header class="header">
+      <div class="container header-wrap">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo">logo</a>
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="#" class="header-link">Home</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-link">About Us</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-link">Services</a>
+            </li>
+            <li class="header-list-item">
+              <a href="#" class="header-link">Blogs</a>
+            </li>
+          </ul>
+          <button class="header-button">Gift Finder</button>
+        </nav>
+      </div>
     </header>
-    <!-- section 1_Find a gift for your wife or girlfriend-->
-    <section>
-      <h1>Find a gift for your wife or girlfriend</h1>
-      <p>Struggling to find a gift for your wife or girlfriend? No problem!</p>
-      <a href="#">Find gift now</a>
-      <img
-        src="./img/exemple_1.jpg"
-        alt="Emotion after a gift"
-        width="720"
-        height="700"
-      />
-    </section>
-    <!-- secnion 2_How we work  -->
-    <section>
-      <img
-        src="./img/word_thanks.jpg"
-        alt="Card with word thanks"
-        width="720"
-        height="600"
-      />
-      <h2>How we work</h2>
-      <p>
-        We’ve actually already asked hundreds of women what they want, and made
-        a database with the results. All you have to do is take our short survey
-        that only takes seconds, and our proprietary algorithm will match you
-        with a few perfect gift options.
-      </p>
-      <a href="#">Learn More</a>
-    </section>
-    <!-- section 3_Gifts for all Occasion -->
-    <section>
-      <h2>Gifts for all Occasions</h2>
-      <p>“Try our web app to find the best gifts for all occasions”</p>
-      <ul>
-        <li>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="wrapper">
+            <div class="content-wrapper">
+              <h1 class="hero-titele">
+                Find a gift for your wife or girlfriend
+              </h1>
+              <p class="hero-text">
+                Struggling to find a gift for your wife or girlfriend? No
+                problem!
+              </p>
+              <button type="button" class="hero-btn">Find gift now</button>
+            </div>
+          </div>
           <img
-            src="./img/picture_1.jpg"
-            alt="Birthday"
-            width="270"
-            height="270"
+            class="hero"
+            src="./img/exemple_1.jpg"
+            alt="Emotions after a gift"
+            width="720"
+            height="700"
           />
-          <h3>Birthday</h3>
-          <a href="#">See More &#62;</a>
-        </li>
-        <li>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="container about-us-container">
           <img
-            src="./img/picture_2.jpg"
-            alt="Anniversary"
-            width="270"
-            height="270"
+            src="./img/word_thanks.jpg"
+            alt="word thanks"
+            width="720"
+            height="600"
           />
-          <h3>Anniversary</h3>
-          <a href="#">See More &#62;</a>
-        </li>
-        <li>
-          <img
-            src="./img/picture_3.jpg"
-            alt="Valentine's Day"
-            width="270"
-            height="270"
-          />
-          <h3>Valentine's Day</h3>
-          <a href="#">See More &#62;</a>
-        </li>
-        <li>
-          <img
-            src="./img/picture_4.jpg"
-            alt="Christmas"
-            width="270"
-            height="270"
-          />
-          <h3>Christmas</h3>
-          <a href="#">See More &#62;</a>
-        </li>
-      </ul>
-    </section>
-    <!-- section 4_Info bar -->
-    <section>
-      <h2 class="visually-hidden">info bar</h2>
-      <p>Ready to get started?</p>
-      <p>Sign up or contact us</p>
-      <a href="#">Find gift now</a>
-      <a href="#">how it works</a>
-    </section>
-    <!-- section 5_Our Best Blogs Ever-->
-    <section>
-      <h2>Our Best Blogs Ever</h2>
-      <p>“Try our blog to find the best tips and tricks to select your gift”</p>
-      <img
-        src="./img/exemple_2.jpg"
-        alt="Happy couple"
-        width="400"
-        height="370"
-      />
-      <article>
-        <p>Mr. John Doe</p>
-        <h3>The best way to wish your wife</h3>
-        <a href="#">Read More</a>
-      </article>
-      <ul>
-        <li>
-          <h3>Database to find the gifts for your girlfriend</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore...
+          <div class="wrapper">
+            <div class="content-wrapper">
+              <h2 class="about-us-title">How we work</h2>
+              <p class="about-us-text">
+                We’ve actually already asked hundreds of women what they want,
+                and made a database with the results. All you have to do is take
+                our short survey that only takes seconds, and our proprietary
+                algorithm will match you with a few perfect gift options.
+              </p>
+              <a href="#" class="about-us-link">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container categories-container">
+          <h2 class="categories-titele">Gifts for all Occasions</h2>
+          <p class="categories-text">
+            “Try our web app to find the best gifts for all occasions”
           </p>
-          <a href="#">Read More</a>
-        </li>
-        <li>
-          <h3>
-            How Artificial Intelligence read your mind to find the best gift
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore...
-          </p>
-          <a href="#">Read More</a>
-        </li>
-      </ul>
-    </section>
-    <footer>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <a href="./index.html">logo</a>
-      <ul>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <!-- логотипи соцмереж поки пропущено -->
-      <p>&copy;2010 — 2020</p>
-      <p>Privacy — Terms</p>
-    </footer>
+          <ul class="categories-list">
+            <li class="categories-item">
+              <img
+                src="./img/picture_1.jpg"
+                alt="Birthday"
+                width="270"
+                height="270"
+              />
+              <div class="categories-item-wrap">
+                <h3 class="categories-item-header">Birthday</h3>
+                <a href="#" class="categories-link">See More &#62;</a>
+              </div>
+            </li>
+            <li class="categories-item">
+              <img
+                src="./img/picture_2.jpg"
+                alt="Anniversary"
+                width="270"
+                height="270"
+              />
+              <div class="categories-item-wrap">
+                <h3 class="categories-item-header">Anniversary</h3>
+                <a href="" class="categories-link">See More &#62;</a>
+              </div>
+            </li>
+            <li class="categories-item">
+              <img
+                src="./img/picture_3.jpg"
+                alt="Valentine's Day"
+                width="270"
+                height="270"
+              />
+              <div class="categories-item-wrap">
+                <h3 class="categories-item-header">Valentine's Day</h3>
+                <a href="" class="categories-link">See More &#62;</a>
+              </div>
+            </li>
+            <li class="categories-item">
+              <img
+                src="./img/picture_4.jpg"
+                alt="Christmas"
+                width="270"
+                height="270"
+              />
+              <div class="categories-item-wrap">
+                <h3 class="categories-item-header">Christmas</h3>
+                <a href="" class="categories-link">See More &#62;</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
